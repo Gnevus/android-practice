@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#195F74"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_post"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_post"
+        android:layout_toRightOf="@id/iv_thumb"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_description"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+        android:layout_marginRight="5dp"
+        android:textColor="#cc3333"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

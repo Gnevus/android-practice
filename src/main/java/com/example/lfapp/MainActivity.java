@@ -131,8 +131,6 @@ public class MainActivity extends Activity {
         protected SimpleAdapter doInBackground(String... strJson) {
             try {
                 jObject = new JSONArray(strJson[0]);
-                PostsJSONParser postsJsonParser = new PostsJSONParser();
-                postsJsonParser.parse(jObject);
             } catch (Exception e) {
                 Log.d("JSON Exception1", e.toString());
             }
